@@ -103,7 +103,7 @@ function Home() {
         >
           <Box
             component="img"
-            src="/images/man_woman.png"
+            src="./src/assets/images/man_woman.png"
             alt="Fitness Man and Woman"
             sx={{
               width: '100%',
@@ -162,9 +162,7 @@ function Home() {
                 width: '100%',
               }}
             >
-              <Typography sx={{ fontSize: '0.9rem', fontWeight: 'bold' }}>
-                {step}
-              </Typography>
+              <Typography sx={{ fontSize: '0.9rem', fontWeight: 'bold' }}>{step}</Typography>
               <Box
                 component="span"
                 sx={{
