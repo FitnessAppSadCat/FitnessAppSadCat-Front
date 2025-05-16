@@ -1,6 +1,6 @@
-import { Box, Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
-import NotFoundImage from "../../images/404.png";
+import { Box, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import NotFoundImage from '../assets/images/404.png';
 
 function NotFound() {
   const navigate = useNavigate();
@@ -8,12 +8,12 @@ function NotFound() {
   return (
     <Box
       sx={{
-        height: "calc(100vh - 160px)",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "primary.main",
+        height: 'calc(100vh - 160px)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'primary.main',
         gap: 4,
         py: 4,
       }}
@@ -23,12 +23,12 @@ function NotFound() {
         src={NotFoundImage}
         alt="404 Not Found"
         sx={{
-          width: { xs: "90%", sm: "400px", md: "500px" },
-          objectFit: "contain",
+          width: { xs: '90%', sm: '400px', md: '500px' },
+          objectFit: 'contain',
           mt: { xs: -2, md: -4 },
         }}
       />
-      <Button onClick={() => navigate("/")}>Back to Home</Button>
+      <Button onClick={() => navigate('/')}>Back to Home</Button>
     </Box>
   );
 }
