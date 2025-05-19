@@ -1,5 +1,6 @@
 import { Box, Typography, Button, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import fitnessGirl from '../../assets/images/fitness-girl.png';
 
 function Home() {
   const theme = useTheme();
@@ -222,7 +223,7 @@ function Home() {
 
           {/* Girl image */}
           <img
-            src="./src/assets/images/fitness-girl.png"
+            src={fitnessGirl}
             alt="Illustration of Fitness Girl"
             style={{
               position: 'absolute',
