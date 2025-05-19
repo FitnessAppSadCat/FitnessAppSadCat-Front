@@ -1,6 +1,6 @@
 import { Box, Typography, Button, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import fitnessGirl from '../../assets/images/fitness-girl.png';
+import fitnessGirl from '../assets/images/fitness-girl.png';
 
 function Home() {
   const theme = useTheme();
