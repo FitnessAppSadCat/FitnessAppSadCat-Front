@@ -1,6 +1,8 @@
 import { Box, Typography, Button, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import fitnessGirl from '../assets/images/fitness-girl.png';
+import starBG from '../assets/images/star-bg.png';
+import manWoman from '../assets/images/man_woman.png';
 
 function Home() {
   const theme = useTheme();
@@ -104,7 +106,7 @@ function Home() {
         >
           <Box
             component="img"
-            src="./src/assets/images/man_woman.png"
+            src={manWoman}
             alt="Fitness Man and Woman"
             sx={{
               width: '100%',
@@ -209,7 +211,7 @@ function Home() {
         >
           {/* Star background */}
           <img
-            src="./src/assets/images/star-bg.png"
+            src={starBG}
             alt="Decorative Star Shape"
             style={{
               position: 'absolute',
